@@ -124,18 +124,18 @@ The spatial decomposition module is designed to separate channel information ass
 
 The decomposition may include:
 
-1 **Antenna-link decomposition**
-CSI is separated according to transmitter–receiver antenna pairs.
-2 **Subcarrier decomposition**
-Frequency-selective channel responses are divided into subcarrier groups or learned spectral embeddings.
-3 **Static and dynamic decomposition**
-Slowly varying environmental components are separated from human-induced temporal variations.
-4 **Amplitude and phase decomposition**
-CSI magnitude and calibrated phase information are processed independently or jointly.
+1 **Antenna-link decomposition:** CSI is separated according to transmitter–receiver antenna pairs.
+
+2 **Subcarrier decomposition:** Frequency-selective channel responses are divided into subcarrier groups or learned spectral embeddings.
+
+3 **Static and dynamic decomposition:** Slowly varying environmental components are separated from human-induced temporal variations.
+
+4 **Amplitude and phase decomposition:** CSI magnitude and calibrated phase information are processed independently or jointly.
+
 5 **Low-rank and residual decomposition**
 The static channel can be approximated as a low-rank component, while motion is represented by a dynamic residual.
-6 **Spatial attention**
-Learnable weights emphasize antenna links and subcarrier regions that contain stronger pose-related information.
-7 **Temporal-frequency decomposition**
-Short-time Fourier transforms, wavelets, Doppler spectra, or learned filters can be used to represent motion dynamics.
+
+6 **Spatial attention**: Learnable weights emphasize antenna links and subcarrier regions that contain stronger pose-related information.
+
+7 **Temporal-frequency decomposition:** Short-time Fourier transforms, wavelets, Doppler spectra, or learned filters can be used to represent motion dynamics.
 By decomposing CSI measurements into meaningful spatial and temporal components, the system attempts to recover motion patterns associated with the positions of major body joints.
