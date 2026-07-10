@@ -1,8 +1,6 @@
 # CSI-Channel Spatial Decomposition for WiFi-Based Human Pose Estimation in Rescue Scenarios
 
-A deep-learning framework for estimating human body poses from WiFi Channel State Information (CSI) in visually degraded rescue environments.
-
-The project processes multi-antenna and multi-subcarrier CSI measurements to identify human-induced channel variations and estimate 2D or 3D body keypoints. It is designed for research involving smoke-filled rooms, darkness, visual obstruction, indoor disasters, and non-line-of-sight conditions.
+A deep-learning framework for estimating human body poses from WiFi Channel State Information (CSI) in visually degraded rescue environments. The project processes multi-antenna and multi-subcarrier CSI measurements to identify human-induced channel variations and estimate 2D or 3D body keypoints. It is designed for research involving smoke-filled rooms, darkness, visual obstruction, indoor disasters, and non-line-of-sight conditions.
 
 > **Research status:** This repository contains an experimental prototype. It is not certified for emergency-response, medical, or other safety-critical applications.
 
@@ -13,25 +11,9 @@ The project processes multi-antenna and multi-subcarrier CSI measurements to ide
 Camera-based pose-estimation systems may fail when illumination is poor or when smoke, dust, debris, or physical obstacles block the camera view. WiFi signals can continue propagating under some of these conditions and are affected by human movement through reflection, diffraction, scattering, and multipath propagation. Channel State Information provides measurements of the amplitude and phase response of individual OFDM subcarriers and antenna links. The proposed framework uses these measurements to extract spatial and temporal features associated with human posture and movement.
 
 The main processing pipeline is:
+![](https://github.com/1Px-Vision/WiFi-CSI-SAR/blob/main/WIFI_CSI_SAR.png)
 
-```text
-WiFi CSI acquisition
-        ↓
-CSI calibration and filtering
-        ↓
-Static-channel suppression
-        ↓
-Antenna and subcarrier decomposition
-        ↓
-Spatial-temporal feature extraction
-        ↓
-Pose-estimation network
-        ↓
-2D/3D skeletal keypoints
-        ↓
-Rescue-posture interpretation
-```
-
+WiFi CSI-based human pose estimation pipeline for rescue scenarios. Multi-receiver WiFi probing captures human-induced channel variations, which are preprocessed, spatially decomposed, and fused across packets and receivers. A deep-learning model then reconstructs 3D rescue-relevant poses, including standing, kneeling, crawling, and fallen postures, to support victim localization, fallen-person detection, search-and-rescue monitoring, and responder assistance.
 ---
 
 ## Objectives
