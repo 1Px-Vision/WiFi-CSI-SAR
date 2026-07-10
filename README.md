@@ -91,9 +91,9 @@ $$
 
 where:
 
-* (N_\mathrm{rx}) is the number of receiving antennas.
+* ($N_{\mathrm{rx}}$) is the number of receiving antennas.
 * ($N_{\mathrm{tx}}$) is the number of transmitting antennas.
-* (N_{\mathrm{sc}}) is the number of OFDM subcarriers.
+* ($N_{\mathrm{sc}}$) is the number of OFDM subcarriers.
 * (t) is the packet or time index.
 
 For a temporal sequence of (T) packets, the model input may be arranged as:
@@ -117,7 +117,7 @@ Input channels can include:
 
 The measured CSI is modeled as:
 
-[
+$$
 \mathbf{X}
 ==========
 
@@ -126,13 +126,13 @@ The measured CSI is modeled as:
 \mathbf{X}*{\mathrm{dynamic}}
 +
 \mathbf{N},
-]
+$$
 
 where:
 
-* (\mathbf{X}_{\mathrm{static}}) represents static propagation paths.
-* (\mathbf{X}_{\mathrm{dynamic}}) represents human-induced channel changes.
-* (\mathbf{N}) represents noise, interference, and hardware distortion.
+* ($\mathbf{X}_{\mathrm{static}}$) represents static propagation paths.
+* ($\mathbf{X}_{\mathrm{dynamic}}$) represents human-induced channel changes.
+* ($\mathbf{N}$) represents noise, interference, and hardware distortion.
 
 The decomposition module may perform:
 
