@@ -44,7 +44,58 @@ Potential research use cases include:
 
 The system should be treated as an additional sensing layer rather than as an independent decision-making system.
 
+## System Architecture
 
+The processing pipeline is organized into the following stages:
 
+WiFi Transmitter
+       |
+       v
+Multipath Propagation Through the Environment
+       |
+       v
+WiFi CSI Receiver
+       |
+       v
+CSI Calibration and Preprocessing
+       |
+       v
+Static-Channel Suppression
+       |
+       v
+CSI-Channel Spatial Decomposition
+       |
+       v
+Spatial–Temporal Feature Extraction
+       |
+       v
+Pose-Estimation Network
+       |
+       v
+2D/3D Human Keypoints
+       |
+       v
+Rescue-Situation Interpretation
+
+A synchronized camera or motion-capture system may be used during dataset preparation to generate reference pose labels. The camera is needed only for supervision and validation and is not necessarily required during CSI-only inference.
+
+## CSI Data Representation
+
+A CSI sample can be represented as a complex-valued tensor:
+
+[
+\mathbf{H}(t) \in
+\mathbb{C}^{N_{\mathrm{rx}} \times N_{\mathrm{tx}} \times N_{\mathrm{sc}}},
+]
+
+where:
+
+(t) is the CSI packet or time index.
+(N_{\mathrm{rx}}) is the number of receiving antennas.
+(N_{\mathrm{tx}}) is the number of transmitting antennas.
+(N_{\mathrm{sc}}) is the number of OFDM subcarriers.
+(\mathbf{H}(t)) contains complex channel coefficients.
+
+For a temporal window containing (T) CSI packets, the input can be arranged as:
 
 By decomposing CSI measurements into meaningful spatial and temporal components, the system attempts to recover motion patterns associated with the positions of major body joints.
