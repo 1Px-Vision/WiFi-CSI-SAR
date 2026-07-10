@@ -118,9 +118,7 @@ Input channels can include:
 The measured CSI is modeled as:
 
 $$
-\mathbf{X}
-==========
-
+\mathbf{X}=
 \mathbf{X}*{\mathrm{static}}
 +
 \mathbf{X}*{\mathrm{dynamic}}
