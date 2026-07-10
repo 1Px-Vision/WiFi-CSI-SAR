@@ -10,9 +10,7 @@ The project processes multi-antenna and multi-subcarrier CSI measurements to ide
 
 ## Overview
 
-Camera-based pose-estimation systems may fail when illumination is poor or when smoke, dust, debris, or physical obstacles block the camera view. WiFi signals can continue propagating under some of these conditions and are affected by human movement through reflection, diffraction, scattering, and multipath propagation.
-
-Channel State Information provides measurements of the amplitude and phase response of individual OFDM subcarriers and antenna links. The proposed framework uses these measurements to extract spatial and temporal features associated with human posture and movement.
+Camera-based pose-estimation systems may fail when illumination is poor or when smoke, dust, debris, or physical obstacles block the camera view. WiFi signals can continue propagating under some of these conditions and are affected by human movement through reflection, diffraction, scattering, and multipath propagation. Channel State Information provides measurements of the amplitude and phase response of individual OFDM subcarriers and antenna links. The proposed framework uses these measurements to extract spatial and temporal features associated with human posture and movement.
 
 The main processing pipeline is:
 
