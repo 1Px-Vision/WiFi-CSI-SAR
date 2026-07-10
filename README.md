@@ -91,7 +91,7 @@ A CSI measurement can be represented as:
 
 where:
 
-* (N_{\mathrm{rx}}) is the number of receiving antennas.
+* (N_\mathrm{rx}) is the number of receiving antennas.
 * (N_{\mathrm{tx}}) is the number of transmitting antennas.
 * (N_{\mathrm{sc}}) is the number of OFDM subcarriers.
 * (t) is the packet or time index.
