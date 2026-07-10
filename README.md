@@ -56,7 +56,7 @@ Rescue-posture interpretation
 * Human–robot and human–UAV rescue coordination.
 * Privacy-preserving posture and occupancy sensing.
 
-WiFi sensing should be used as a complementary sensing modality and not as the only source of information for rescue decisions.
+WiFi sensing should be used as a complementary modality rather than the sole source of information for rescue decisions.
 
 ---
 
@@ -71,7 +71,7 @@ WiFi sensing should be used as a complementary sensing modality and not as the o
 * Sliding temporal-window generation.
 * Spatial and temporal attention.
 * CNN, LSTM, GRU, TCN, and Transformer support.
-* Direct coordinate or heatmap-based pose estimation.
+* Direct coordinate- or heatmap-based pose estimation.
 * Joint-confidence prediction.
 * Rescue-posture classification.
 * LOS and NLOS evaluation.
@@ -84,15 +84,15 @@ WiFi sensing should be used as a complementary sensing modality and not as the o
 
 A CSI measurement can be represented as:
 
-[
-\mathbf{H}(t)\in
-\mathbb{C}^{N_{\mathrm{rx}}\times N_{\mathrm{tx}}\times N_{\mathrm{sc}}},
-]
+$$
+\mathbf{H}(t) \in
+\mathbb{C}^{N_{\mathrm{rx}} \times N_{\mathrm{tx}} \times N_{\mathrm{sc}}}
+$$
 
 where:
 
 * (N_\mathrm{rx}) is the number of receiving antennas.
-* (N_{\mathrm{tx}}) is the number of transmitting antennas.
+* ($N_{\mathrm{tx}}$) is the number of transmitting antennas.
 * (N_{\mathrm{sc}}) is the number of OFDM subcarriers.
 * (t) is the packet or time index.
 
