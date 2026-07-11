@@ -41,9 +41,11 @@ WiFi CSI-based human pose estimation pipeline for rescue scenarios. Multi-receiv
 WiFi sensing should be used as a complementary modality rather than the sole source of information for rescue decisions.
 
 ---
+### Human Pose
 
 ![](https://github.com/1Px-Vision/WiFi-CSI-SAR/blob/main/WIFI_CSI_Pose.jpg)
 
+### Breathing 
 ![](https://github.com/1Px-Vision/WiFi-CSI-SAR/blob/main/WIFI_CSI_Breathing.jpg)
 
 ## Main Features
