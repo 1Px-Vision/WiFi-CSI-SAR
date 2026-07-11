@@ -44,6 +44,8 @@ WiFi sensing should be used as a complementary modality rather than the sole sou
 
 ![](https://github.com/1Px-Vision/WiFi-CSI-SAR/blob/main/WIFI_CSI_Pose.jpg)
 
+![](https://github.com/1Px-Vision/WiFi-CSI-SAR/blob/main/WIFI_CSI_Breathing.jpg)
+
 ## Main Features
 
 * Multi-antenna WiFi CSI processing.
