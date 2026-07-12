@@ -490,6 +490,16 @@ Recommended rescue-oriented metrics include:
 * Cross-room generalization.
 * Confidence-calibration error.
 
+Raw CSI measurements were collected for each participant while performing five activities:
+
+* Fall (FA)
+* Get Up (GU)
+* Lie Down (LD)
+* Sit Down (SD)
+* Walk (WA)
+* 
+![](https://github.com/1Px-Vision/WiFi-CSI-SAR/blob/main/CSI_activity_CM.jpg)
+
 ---
 
 ## Experimental Protocol
