@@ -133,6 +133,8 @@ The decomposition module may perform:
 
 ## CSI-Based Breathing Human Detection
 
+![](https://github.com/1Px-Vision/WiFi-CSI-SAR/blob/main/CSI_Breathing.jpg)
+
 This illustration presents the signal-processing workflow used for contactless human breathing detection with WiFi Channel State Information (CSI). The system collects CSI measurements, estimates the channel impulse response, suppresses RF distortions, and aligns dominant and dynamic propagation paths. The processed signals are then analyzed to extract periodic respiratory patterns and estimate the subject’s distance. The lower plots compare raw and aligned magnitude, phase, subcarrier, and path signals, highlighting the improvement in signal-to-signal-plus-noise ratio and the clearer recovery of breathing-related motion.
 
 ---
